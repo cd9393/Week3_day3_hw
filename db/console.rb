@@ -16,7 +16,8 @@ album1 = Album.new({
   })
 
   album1.save()
-
+  artist1.name = "bon jovi"
+  artist1.update()
 
   artist1.album
 
