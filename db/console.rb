@@ -19,7 +19,7 @@ album1 = Album.new({
   artist1.name = "bon jovi"
   artist1.update()
 
-  artist1.album
+  artist1.albums
 
 binding.pry
 nil

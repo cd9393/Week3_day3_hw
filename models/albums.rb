@@ -36,6 +36,12 @@ class Album
     SqlRunner.run(sql,values)
   end
 
+  def update()
+    sql = "UPDATE albums SET name = $1 WHERE id = $2"
+    values = [@name, @id]
+    SqlRunner.run(sql,values)
+  end
+
   def self.all()
       sql = "SELECT * FROM albums"
       albums = SqlRunner.run(sql)
