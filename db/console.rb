@@ -6,8 +6,12 @@ Album.delete_all()
 Artist.delete_all()
 
 artist1 = Artist.new({"name" => "Elton John"})
+artist2 = Artist.new({"name" => "Skepta"})
+artist3 = Artist.new({"name" => "Bob Marley"})
 
 artist1.save()
+artist2.save()
+artist3.save()
 
 album1 = Album.new({
   "name" => "Tiny Dancer",
