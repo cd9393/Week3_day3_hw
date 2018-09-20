@@ -19,7 +19,22 @@ album1 = Album.new({
   "artist_id" => artist1.id
   })
 
+  album2 = Album.new({
+    "name" => "Konnichiwa",
+    "genre" => "Grime",
+    "artist_id" => artist2.id
+    })
+
+  album3 = Album.new({
+      "name" => "Exodus 40",
+      "genre" => "Reggae",
+      "artist_id" => artist2.id
+      })
+
   album1.save()
+  album2.save()
+  album3.save()
+
   artist1.name = "bon jovi"
   artist1.update()
 
